@@ -75,6 +75,12 @@ body {
   letter-spacing: 0.03em;
 }
 
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 button {
   cursor: pointer;
   border: none;
@@ -93,6 +99,8 @@ address {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+
+  margin-right: 93px;
 }
 
 .header .logo span {
@@ -101,14 +109,42 @@ address {
 
 /* Header */
 
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  margin-right: auto;
+}
+
 .site-nav .link {
   color: var(--headers-text-color);
+}
+
+.list-nav-container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
 }
 
 .header .link {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.site-contacts {
+  display: flex;
+  align-items: center;
+  gap: 50px;
 }
 
 .site-contacts .link {
@@ -130,6 +166,8 @@ address {
 
 .caption {
   background-color: var(--bg-secondary-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .caption-header {
@@ -159,6 +197,9 @@ address {
   letter-spacing: 0.06em;
 
   padding: 10px 32px;
+
+  display: block;
+  margin: 0 auto;
 }
 
 .caption-button:active {
@@ -174,8 +215,26 @@ address {
   width: 270px;
 }
 
+.section-features-item .section-description {
+  line-height: 1.71;
+}
+
+/* .section-features-item:not(:last-child) {
+  margin-right: 30px;
+} */
+
 .section.features {
   background-color: var(--bg-features-color);
+  padding-top: 94px;
+}
+
+.section.features.works {
+  padding-bottom: 94px;
+}
+
+.section-list {
+  display: flex;
+  justify-content: space-between;
 }
 
 .feature-name {
@@ -188,9 +247,11 @@ address {
 
 .section.team {
   background-color: var(--bg-fourth-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
-.section.features > h2,
+.features-our-works,
 .section-our-team {
   font-size: 36px;
   line-height: 1.17;
@@ -221,6 +282,7 @@ address {
 
 .footer {
   background-color: var(--bg-secondary-color);
+  padding: 60px 0;
 }
 
 .footer .logo {
@@ -281,10 +343,6 @@ address {
   color: var(--secondary-text-color);
 }
 
-.projects-img {
-  margin-bottom: 20px;
-}
-
 .projects .list .section-title {
   font-size: 18px;
   line-height: 2;
@@ -300,4 +358,12 @@ address {
 .projects .list .section-description {
   font-size: 16px;
   line-height: 1.88;
+}
+
+.section-wrapper {
+  padding-bottom: 20px;
+  padding-top: 20px;
+
+  border: 1px solid #eeeeee;
+  border-top: none;
 }

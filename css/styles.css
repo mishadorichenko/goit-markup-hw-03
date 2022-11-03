@@ -277,8 +277,8 @@ address {
   margin-bottom: 50px;
 }
 
-.section-our-team-img {
-  margin-bottom: 30px;
+.team-title-wrapper {
+  padding: 30px 0;
 }
 
 .section.team .section-title {
@@ -340,6 +340,7 @@ address {
   display: flex;
   justify-content: center;
   gap: 8px;
+  margin-bottom: 50px;
 }
 
 .filters-buttons > li > button {
@@ -368,10 +369,6 @@ address {
 
 .projects {
   padding-top: 94px;
-}
-
-.list-projects {
-  padding-top: 34px;
   padding-bottom: 94px;
 }
 

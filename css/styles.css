@@ -67,6 +67,7 @@ ul {
 img {
   display: block;
 }
+/*reset end*/
 
 .card-set {
   display: flex;
@@ -75,9 +76,8 @@ img {
 }
 
 .card-set-items {
-  flex-basis: calac((100% - var(--indent) * var(--items) - 1) / var(--items));
+  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / (var(--items)));
 }
-/*reset end*/
 
 body {
   background-color: var(--bg-primary-color);
